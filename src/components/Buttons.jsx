@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styled, { keyframes } from "styled-components";
 import { fadeInUpBig } from "react-animations";
 import { AppContext } from "../hooks/AppContext";
-import { Github, Linkedin, Email } from "./../icons";
+import { Github, Linkedin, Email, Resume } from "./../icons";
 /* Buttons component. Github, Linkedin and main buttons are shown with some animation. */
 
 const fadeInUpAnimation = keyframes`${fadeInUpBig}`;
@@ -109,6 +109,12 @@ const Buttons = () => {
       aria: "Visit my Linkedin profile",
       icon: <Linkedin />,
       label: "Linkedin",
+    },
+    {
+      href: "https://drive.google.com/file/d/16Na3HGd2NHrE7El_RAOU4S2OPWScI1ro/",
+      aria: "Visit Google Drive to view and download my resume",
+      icon: <Resume />,
+      label: "Resume",
     },
     {
       href: "mailto:birkagal@gmail.com",
