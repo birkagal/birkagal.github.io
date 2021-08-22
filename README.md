@@ -3,7 +3,7 @@
 > 💻 Simplistic, minimalist and interactive personal website built with
 > [`React`](https://reactjs.org/).
 
-<img float="left" height="340" src="images/desktop.png" alt="Desktop Preview" role="img" aria-label="desktop screenshot"> <img float="right" height="340" src="images/mobile.png" alt="Mobile Preview" role="img" aria-label="mobile screenshot">
+<img float="left" height="340" src="images/desktop.png" alt="Desktop Preview" role="img" aria-label="desktop screenshot">
 
 This website's design is both simple and accessible. Dynamic particles create an experience that is interactive and visually inviting. The site offers two themes via a toggle, dark mode (default) and light mode. Once toggled, the selected theme should persist between tabs, windows, and page reloads.
 The website is mobile friendly.
