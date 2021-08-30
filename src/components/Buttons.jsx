@@ -111,7 +111,7 @@ const Buttons = () => {
       label: "Linkedin",
     },
     {
-      href: "https://drive.google.com/file/d/16Na3HGd2NHrE7El_RAOU4S2OPWScI1ro/",
+      href: "https://drive.google.com/file/d/1QxYlYO4l3Gcpe0lmyQ039l538oX3HeVm/",
       aria: "Visit Google Drive to view and download my resume",
       icon: <Resume />,
       label: "Resume",
