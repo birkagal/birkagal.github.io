@@ -1,7 +1,6 @@
-import React from "react";
 import ThemeProvider from "./hooks/AppContext";
 import { Toggle, Content, Buttons, Footer, Particles } from "./components";
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
   return (

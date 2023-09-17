@@ -1,25 +1,4 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import { Particles as ReactParticles } from "react-particles-js";
-import { AppContext } from "../hooks/AppContext";
-/* particles-js component used to create beautiful background. */
-
-const P = {
-  Container: styled.div`
-    transition: background-color 0.8s linear;
-    position: absolute;
-    background-color: ${({ theme }) => theme.background};
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  `,
-};
-
-const Particles = () => {
-  const { theme } = useContext(AppContext);
-  /* particles-js params. Generated json configuration file after tweaking and playing around this website.
-   * source: https://vincentgarreau.com/particles.js */
-  const params = {
+export const params = {
     particles: {
       number: {
         value: 80,
@@ -78,14 +57,5 @@ const Particles = () => {
         },
       },
     },
-    retina_detect: true,
+    detectRetina: true,
   };
-
-  return (
-    <P.Container theme={theme}>
-      <ReactParticles width="100vw" height="100vh" params={params} />
-    </P.Container>
-  );
-};
-
-export default Particles;

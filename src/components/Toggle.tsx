@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styled, { keyframes } from "styled-components";
 import { fadeInDown } from "react-animations";
-import { Moon, Sun } from "./../icons";
+import { Moon, Sun } from "../icons";
 import { AppContext } from "../hooks/AppContext";
-/* Toggle button component. Display Moon/Sun icon and update isDark when pressed. */
 
 const fadeInRightAnimation = keyframes`${fadeInDown}`;
 

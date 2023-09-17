@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styled, { keyframes } from "styled-components";
 import { fadeInUpBig } from "react-animations";
 import { AppContext } from "../hooks/AppContext";
-import { Github, Linkedin, Email, Resume } from "./../icons";
-/* Buttons component. Github, Linkedin and main buttons are shown with some animation. */
+import { buttonsData } from "../configs/buttons";
 
 const fadeInUpAnimation = keyframes`${fadeInUpBig}`;
 
@@ -97,36 +96,9 @@ const Container = styled.div`
 const Buttons = () => {
   const { theme } = useContext(AppContext);
 
-  const DATA = [
-    {
-      href: "https://github.com/birkagal/",
-      aria: "Visit my Github profile",
-      icon: <Github />,
-      label: "Github",
-    },
-    {
-      href: "https://www.linkedin.com/in/birkagal/",
-      aria: "Visit my Linkedin profile",
-      icon: <Linkedin />,
-      label: "Linkedin",
-    },
-    {
-      href: "https://drive.google.com/file/d/1tb2hTQ1y5oH6cMHSnkM6jDVlbXtThnth/",
-      aria: "Visit Google Drive to view and download my resume",
-      icon: <Resume />,
-      label: "Resume",
-    },
-    {
-      href: "mailto:birkagal@gmail.com",
-      aria: "Send me an email",
-      icon: <Email />,
-      label: "Email",
-    },
-  ];
-
   return (
     <Container theme={theme}>
-      {DATA.map(({ href, aria, icon, label }, i) => (
+      {buttonsData.map(({ href, aria, icon, label }, i) => (
         <span className="button-container" key={i}>
           <a
             className="button"

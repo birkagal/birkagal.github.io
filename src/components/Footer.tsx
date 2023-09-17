@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styled, { keyframes } from "styled-components";
 import { fadeInRight } from "react-animations";
 import { AppContext } from "../hooks/AppContext";
-/* Footer component. Show website link and github source code link. */
 
 const fadeInRightAnimation = keyframes`${fadeInRight}`;
 
@@ -11,7 +10,7 @@ const FadeInRightDiv = styled.div`
 `;
 
 const F = {
-  Container: styled.div`
+  Container: styled.div<{isMobile: boolean;}>`
     position: absolute;
     bottom: 0;
     right: 0;
