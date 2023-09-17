@@ -13,12 +13,12 @@ Hosted using `gh-pages` and can be found @ [birkagal.com](https://www.birkagal.c
 ## <b>Install &amp; Setup</b></summary>
 
 1. Clone this repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
+2. Install dependencies: `yarn install`
+3. Start the development server: `yarn start`
 
 <b>Build &amp; Deploy</b>
 
-1. Create a production build: `npm run build`
+1. Create a production build: `yarn run build`
 2. The [React/Deployment](https://create-react-app.dev/docs/deployment/) docs detail how to deploy to `gh-pages`, Netlify, and many other services
 
 
