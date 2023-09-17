@@ -12,8 +12,12 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Install and Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Install and Build 🔧
         run: |
           yarn install --frozen-lockfile
-          yarn run deploy
+          yarn run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
